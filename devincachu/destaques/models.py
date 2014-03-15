@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Copyright 2013 Dev in Cachu authors. All rights reserved.
+# Copyright 2014 Dev in Cachu authors. All rights reserved.
 # Use of this source code is governed by a BSD-style
 # license that can be found in the LICENSE file.
-
-import roan
 
 from django.contrib.auth import models as auth_models
 from django.db import models
@@ -21,7 +19,3 @@ class Destaque(models.Model):
 
     def __unicode__(self):
         return self.titulo
-
-
-roan.purge("/").on_save(Destaque)
-roan.purge("/").on_delete(Destaque)

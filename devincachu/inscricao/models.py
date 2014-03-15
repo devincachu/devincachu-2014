@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 
-# Copyright 2013 Dev in Cachu authors. All rights reserved.
+# Copyright 2014 Dev in Cachu authors. All rights reserved.
 # Use of this source code is governed by a BSD-style
 # license that can be found in the LICENSE file.
 
 import datetime
 import hashlib
 import random
-
-import roan
 
 from django.db import models
 
@@ -127,5 +125,3 @@ class Configuracao(models.Model):
     class Meta:
         verbose_name = u"Configuração das inscrições"
         verbose_name_plural = verbose_name
-
-roan.purge("/inscricao/").on_save(Configuracao)

@@ -1,4 +1,4 @@
-# Copyright 2013 Dev in Cachu authors. All rights reserved.
+# Copyright 2014 Dev in Cachu authors. All rights reserved.
 # Use of this source code is governed by a BSD-style
 # license that can be found in the LICENSE file.
 
@@ -13,9 +13,6 @@ admin.autodiscover()
 from devincachu.destaques import views as dviews
 from devincachu.inscricao import views as iviews
 from devincachu.palestras import views as pviews
-
-from purger import connect
-connect()
 
 p = patterns
 urlpatterns = p("",
