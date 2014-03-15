@@ -1,0 +1,6 @@
+libmysqlclient-dev
+python-dev
+libjpeg-dev
+libpng-dev
+libxml2-dev
+libxslt-dev
