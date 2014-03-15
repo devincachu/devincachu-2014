@@ -1,0 +1,15 @@
+- fields:
+    date_joined: 2014-03-15 11:16:29
+    email: contato@devincachu.com.br
+    first_name: 'Admin'
+    groups: []
+    is_active: true
+    is_staff: true
+    is_superuser: true
+    last_login: 2014-03-15 11:16:29
+    last_name: 'Cachu'
+    password: pbkdf2_sha256$12000$iyPvDWLEHju6$6KXFNAnqJS0uLt/pcHKZ7rj7J8hWeu5cJtJycVeW1y8=
+    user_permissions: []
+    username: admin
+  model: auth.user
+  pk: 1
