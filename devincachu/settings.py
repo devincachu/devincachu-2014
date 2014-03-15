@@ -47,8 +47,7 @@ ALLOWED_HOSTS = (
 
 MEDIA_ROOT = os.path.join(ROOT, "media")
 MEDIA_URL = os.environ.get("DEVINCACHU_MEDIA_URL", "/media/")
-BASE_URL = "http://2013.devincachu.com.br"
-ROAN_PURGE_URL = "%s/purge" % BASE_URL
+BASE_URL = "http://2014.devincachu.com.br"
 
 STATIC_ROOT = os.path.join(ROOT, "static")
 STATIC_URL = os.environ.get("DEVINCACHU_STATIC_URL", "/static/")
@@ -183,7 +182,7 @@ PAGSEGURO = {
     "token": os.environ.get("DEVINCACHU_PS_TOKEN", "not-secret"),
     "currency": "BRL",
     "itemId1": "0001",
-    "itemDescription1": u"Inscrição no Dev in Cachu 2013",
+    "itemDescription1": u"Inscrição no Dev in Cachu 2014",
     "itemQuantity1": 1,
 }
 
