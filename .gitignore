@@ -1,6 +1,2 @@
-*.sw*
 *.pyc
-.DS_Store
 /devincachu/static/
-.ropeproject
-*.log
