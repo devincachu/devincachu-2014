@@ -1,4 +1,4 @@
-BeaultifulSoup==3.2.1
+BeautifulSoup==3.2.1
 Django==1.6.2
 Markdown==2.4
 MySQL-Python==1.2.3
