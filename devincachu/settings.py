@@ -5,6 +5,7 @@
 # license that can be found in the LICENSE file.
 
 import os
+import sys
 
 ROOT = os.path.abspath(os.path.dirname(__file__))
 RESOURCES_DIRECTORY = os.path.abspath(os.path.join(ROOT, "..", "resources"))
@@ -145,19 +146,14 @@ LOGGING = {
         },
         "django_error": {
             "level": "ERROR",
-            "class": "logging.handlers.RotatingFileHandler",
-            "filename": "devincachu_djerror.log",
-            "maxBytes": "1024",
-            "backupCount": "1",
+            "class": "logging.StreamHandler",
             "formatter": "verbose",
         },
         "inscricoes": {
             "level": "INFO",
-            "class": "logging.handlers.RotatingFileHandler",
-            "filename": "inscricoes.log",
-            "maxBytes": "2048",
-            "backupCount": "3",
+            "class": "logging.StreamHandler",
             "formatter": "verbose",
+            "stream": sys.stdout,
         }
     },
     "loggers": {
