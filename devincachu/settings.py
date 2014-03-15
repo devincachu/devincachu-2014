@@ -41,7 +41,8 @@ USE_I18N = True
 USE_L10N = True
 
 ALLOWED_HOSTS = (
-    "2013.devincachu.com.br",
+    "2014.devincachu.com.br",
+    "devincachu.cloud.tsuru.io",
 )
 
 MEDIA_ROOT = os.path.join(ROOT, "media")
