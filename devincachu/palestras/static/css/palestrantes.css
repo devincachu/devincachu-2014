@@ -90,6 +90,7 @@ license that can be found in the LICENSE file.
 	font-style: italic;
 	font-style: 16px;
 	margin-bottom: 18px;
+	max-width: 200px;
 }
 #team .people .bio_box .info a {
 	margin-right: 10px;
