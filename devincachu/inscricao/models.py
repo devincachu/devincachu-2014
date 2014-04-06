@@ -96,7 +96,7 @@ class Certificado(models.Model):
 
     @classmethod
     def _calcular_codigo(cls, participante):
-        return "2013%04d%04d" % (random.randint(1, 9999), participante.pk)
+        return "2014%04d%04d" % (random.randint(1, 9999), participante.pk)
 
     @classmethod
     def _calcular_hash(cls, participante):

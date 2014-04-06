@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Copyright 2013 Dev in Cachu authors. All rights reserved.
+# Copyright 2014 Dev in Cachu authors. All rights reserved.
 # Use of this source code is governed by a BSD-style
 # license that can be found in the LICENSE file.
 
@@ -23,7 +23,7 @@ class PalestrantesView(list.ListView):
             u"keywords": u"dev in cachu, palestrantes, %s" % u", "
                          .join([p.nome for p in
                                 context["palestrantes"]]),
-            u"description": u"Palestrantes do Dev in Cachu 2013",
+            u"description": u"Palestrantes do Dev in Cachu 2014",
             u"canonical_url": u"%s/palestrantes/" % settings.BASE_URL
         })
 
@@ -38,11 +38,11 @@ class ProgramacaoView(list.ListView):
 
     def get_context_data(self, **kwargs):
         context = super(ProgramacaoView, self).get_context_data(**kwargs)
-        keywords = [u"devincachu", u"dev in cachu 2013", u"palestras",
+        keywords = [u"devincachu", u"dev in cachu 2014", u"palestras",
                     u"programação", u"desenvolvimento de software"]
         context.update({
             u"keywords": u", ".join(keywords),
-            u"description": u"Grade de programação do Dev in Cachu 2013",
+            u"description": u"Grade de programação do Dev in Cachu 2014",
             u"canonical_url": u"%s/programacao/" % settings.BASE_URL,
         })
         return context
@@ -63,7 +63,7 @@ class PalestraView(detail.DetailView):
 
     def get_context_data(self, **kwargs):
         context = super(PalestraView, self).get_context_data(**kwargs)
-        keywords = [u"dev in cachu 2013", u"palestra",
+        keywords = [u"dev in cachu 2014", u"palestra",
                     context[u"palestra"].titulo,
                     context[u"palestra"].nomes_palestrantes()
                     .replace(u" e ", u", ")]
