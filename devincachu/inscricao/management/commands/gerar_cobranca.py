@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Copyright 2013 Dev in Cachu authors. All rights reserved.
+# Copyright 2014 Dev in Cachu authors. All rights reserved.
 # Use of this source code is governed by a BSD-style
 # license that can be found in the LICENSE file.
 
@@ -22,7 +22,7 @@ class Command(base.BaseCommand, views.MailerMixin):
     def enviar_email_cobranca(self, checkout, sufixo):
         conteudo = loader.render_to_string("email_aguardando.html",
                                            {"checkout": checkout})
-        assunto = u"[Dev in Cachu 2013] Inscrição recebida - %s" % sufixo
+        assunto = u"[Dev in Cachu 2014] Inscrição recebida - %s" % sufixo
         self.enviar_email(assunto, conteudo, [checkout.participante.email])
 
     def gerar_cobranca(self, participante, sufixo, valor):
