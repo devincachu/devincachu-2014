@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Copyright 2013 Dev in Cachu authors. All rights reserved.
+# Copyright 2014 Dev in Cachu authors. All rights reserved.
 # Use of this source code is governed by a BSD-style
 # license that can be found in the LICENSE file.
 
@@ -21,11 +21,11 @@ class IndexView(base.View):
         contexto = {
             'destaques': self.obter_destaques(),
             'canonical_url': u"%s/" % settings.BASE_URL,
-            'keywords': u", ".join([u"devincachu", "dev in cachu 2013",
+            'keywords': u", ".join([u"devincachu", "dev in cachu 2014",
                                     u"evento de informática",
                                     u"desenvolvimento de software",
                                     u"cachoeiro de itapemirim"]),
-            'description': u"Dev in Cachu 2013 - principal evento sobre " +
+            'description': u"Dev in Cachu 2014 - principal evento sobre " +
                            u"desenvolvimento de software do " +
                            u"Espírito Santo",
         }
