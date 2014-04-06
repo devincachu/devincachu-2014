@@ -1,4 +1,4 @@
-{# Copyright 2013 Dev in Cachu authors. All rights reserved. #}
+{# Copyright 2014 Dev in Cachu authors. All rights reserved. #}
 {# Use of this source code is governed by a BSD-style #}
 {# license that can be found in the LICENSE file. #}
 
@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Dev in Cachu 2013 | Certificado de participação de {{ certificado.participante.nome }}</title>
+<title>Dev in Cachu 2014 | Certificado de participação de {{ certificado.participante.nome }}</title>
 <style>
 @page landscape {
 	size: landscape;
@@ -61,10 +61,10 @@ p.validacao {
 </head>
 <body>
 <div id="certificado">
-	<div class="logo"><img src="{{ STATIC_URL }}img/devincachu-2013.png" width="400" height="139" alt="Dev in Cachu 2013" /></div>
+	<div class="logo"><img src="{{ STATIC_URL }}img/devincachu-2014.png" width="400" height="139" alt="Dev in Cachu 2014" /></div>
 	<h1>Certificado</h1>
-	<p class="texto">Certificamos que <strong>{{ certificado.participante.nome }}</strong> participou do Dev in Cachu 2013, no dia 04 de Maio de 2013, com uma carga horária total de {{ certificado.horas }} horas.</p>
-	<p class="validacao">Para confirmar a validade deste certificado, acesse a URL <strong>http://2013.devincachu.com.br/certificado/validar/</strong> e digite o código <strong>{{ certificado.codigo }}</strong>.</p>
+	<p class="texto">Certificamos que <strong>{{ certificado.participante.nome }}</strong> participou do Dev in Cachu 2014, no dia 04 de Maio de 2014, com uma carga horária total de {{ certificado.horas }} horas.</p>
+	<p class="validacao">Para confirmar a validade deste certificado, acesse a URL <strong>http://2014.devincachu.com.br/certificado/validar/</strong> e digite o código <strong>{{ certificado.codigo }}</strong>.</p>
 	<p class="assinatura">
 	<img src="{{ STATIC_URL }}img/assinou.png">
 	<strong>Francisco Antônio da Silva Souza</strong>
