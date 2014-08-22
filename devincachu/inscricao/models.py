@@ -43,9 +43,6 @@ class Participante(models.Model):
     email = models.EmailField(max_length=100)
     status = models.CharField(max_length=20, choices=STATUS,
                               default=u'AGUARDANDO')
-    tamanho_camiseta = models.CharField(max_length=2,
-                                        verbose_name=u"Tamanho da camiseta",
-                                        choices=TAMANHOS_DE_CAMISETA)
     instituicao_ensino = models.CharField(
         max_length=100,
         verbose_name=u"Instituição de ensino (estudantes)",
