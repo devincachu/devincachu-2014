@@ -269,6 +269,7 @@
 
 #patrocinadores ul > li a {
 	display: block;
+	height: 100%;
 }
 
 #patrocinadores ul > li > a > span {
