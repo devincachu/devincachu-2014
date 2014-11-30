@@ -178,7 +178,7 @@ AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
 AWS_STORAGE_BUCKET_NAME = os.environ.get("DEVINCACHU_S3_BUCKET_NAME")
 AWS_S3_CUSTOM_DOMAIN = os.environ.get("DEVINCACHU_S3_CUSTOM_DOMAIN")
 AWS_IS_GZIPPED = True
-AWS_S3_SECURE_URLS = False
+AWS_S3_SECURE_URLS = True
 STATICFILES_STORAGE = os.environ.get("STATICFILES_STORAGE",
                                      "django.contrib.staticfiles.storage.StaticFilesStorage")
 COMPRESS_STORAGE = STATICFILES_STORAGE
