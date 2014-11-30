@@ -48,7 +48,7 @@ ALLOWED_HOSTS = (
 
 MEDIA_ROOT = os.path.join(ROOT, "media")
 MEDIA_URL = os.environ.get("DEVINCACHU_MEDIA_URL", "/media/")
-BASE_URL = "http://2014.devincachu.com.br"
+BASE_URL = "https://2014.devincachu.com.br"
 
 STATIC_ROOT = os.path.join(ROOT, "static")
 STATIC_URL = os.environ.get("DEVINCACHU_STATIC_URL", "/static/")
