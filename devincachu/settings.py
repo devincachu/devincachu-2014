@@ -12,7 +12,7 @@ RESOURCES_DIRECTORY = os.path.abspath(os.path.join(ROOT, "..", "resources"))
 
 DEBUG = int(os.environ.get("DEVINCACHU_DEBUG", 1)) != 0
 TEMPLATE_DEBUG = DEBUG
-COMPRESS_ENABLED = os.environ.get("DEVINCACHU_COMPRESS", not DEBUG)
+COMPRESS_ENABLED = os.environ.get("DEVINCACHU_COMPRESS", "false") == "true"
 
 ADMINS = (
     # ("Your Name", "your_email@example.com"),
