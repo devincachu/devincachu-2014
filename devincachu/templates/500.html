@@ -2,9 +2,17 @@
 {# Use of this source code is governed by a BSD-style #}
 {# license that can be found in the LICENSE file. #}
 
-{% extends "error.html" %}
-
-{% block title %}Erro interno | {{ block.super }}{% endblock %}
-
-{% block header %}500 - Erro interno no servidor!{% endblock %}
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Dev in Cachu 2014</title>
+    </head>
+    <body>
+        <h1>
+            ERRO INTERNO
+        </h1>
+	<p>Algo de errado não está certo</p>
+        <a href="{% url "index" %}" title="Página inicial do Dev in Cachu 2014">Voltar para página inicial do Dev in Cachu 2014</a>
+    </body>
+</html>
